@@ -1,0 +1,134 @@
+@import fonts
+@import position
+@import width
+@import scroll
+@import height
+
+
+$bodyBg: #222
+$itemBg: rgba(255,255,255,0.6)
+$bttnBg: #18bfef
+$transition: all 0.5s cubic-bezier(0.33,0.33,0.33,1)
+$textColor: #838b91
+$secColor: #fcfcfc
+
+body
+	margin: 0
+	background: $bodyBg
+	color: $textColor
+p,h1,h2,h3,h4,h5
+	margin: 0
+	padding: 16px
+	box-sizing: border-box
+div
+	box-sizing: border-box
+.img
+	background-color: #000
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+	height: 100%
+	width: 100%
+.nav-img
+	height: 100vh
+	width: 50%
+	position: absolute
+	top: 0
+	right: 0
+
+.cont
+	height: 100vh
+	position: relative
+	color: $textColor
+.prim-color
+	color: $secColor
+	font-weight: 900
+.underline
+	color: $secColor
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		height: 50%
+		width: 100%
+		bottom: 0%
+		left: 0%
+		background: rgba(1,1,1,0.2)
+		z-index: -1
+i
+	font-style: normal		
+
+
+.rel
+	position: relative
+.text-type
+	display: inline-block
+.text-type:after
+	content: "|"
+	color: transparent
+	border-right: 2px solid
+	animation: blink 0.9s steps(44) infinite normal
+	
+.nav
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translate(-50%,0)
+.nav-line
+	transform: rotate(270deg)
+
+.line
+	width: 25px
+	position: relative
+	margin: 0 1px 0 1px
+	cursor: pointer
+	position: relative
+.bef
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	height: 1px
+	border-bottom: $textColor solid 1px
+	transition: all 0.3s cubic-bezier(0.33,0.33,0.33,1)
+.bef:hover
+	width: 150%
+	border-bottom-color: #18bfef
+	i
+		visibility: hidden
+
+.reOp
+	opacity: 0.1
+	transition: all 0.5s cubic-bezier(0.33,0.33,0.33,1)
+.writeOp,.transText
+	opacity: 0.1
+	transition: all 0.5s cubic-bezier(0.33,0.33,0.33,1)
+.fixed-menu
+	position: fixed
+	top: 5%
+	right: 5%
+	z-index: 999
+
+.textOp
+	opacity: 0.1
+	transition: $transition
+.rotate
+	animation: rot 0.5s linear
+.pointer
+	cursor: pointer
+	transition: $transition
+	z-index: 1
+	&:hover
+		color: #18bfef
+@keyframes rot
+	from
+		transform: rotateX(90deg)
+		opacity: 0
+	to
+		transform: rotateX(0)
+		opacity: 1
+@keyframes blink
+	from
+		border-right-color: rgba(255,255,255,.75)
+	to
+		border-right-color: transparent
