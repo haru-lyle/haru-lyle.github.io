@@ -1,5 +1,6 @@
-var phrase = ['An aspiring web developer',
-			'A try-hard web designer',
+var phrase = ['A front end developer',
+			'A little bit of designer',
+	      		'A student of back end development',
 			'A passionate experience seeker',
 			'An avid learner of programming',
 			'And a real damn coffee lover'];
@@ -120,7 +121,7 @@ window.addEventListener('load',function(){
 
 
 function createText(){
-	this.para = ['Im a front end developer that heavily focuses on React.js and at the same time im trying to study REST Api',
+	this.para = ['Im a graduate of BS Information Technology from Catanduanes State University and im currently working as a front end developer in Ten88 Digital. Im quite sure that i have gained a lot of experience in developing websites and web app, but im still learning.',
 				'My idea of a great UI/UX design is the ability of the product to convey what it wants the user to see and experience without using any roundabout methods. Simple, lightweight and easy to comprehend. A user-centered approach with strong and appealing visual language and little to no explanation of the navigation.',
 				'I like fellines and caffeine.'];
 	this.arrText = this.para[0].split('');
