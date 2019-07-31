@@ -1,9 +1,8 @@
 var phrase = ['A front end developer',
-			'A little bit of designer',
-	      		'A student of back end development',
-			'A passionate experience seeker',
-			'An avid learner of programming',
-			'And a real damn coffee lover'];
+		'A passionate experience seeker',
+		'An avid learner of programming',
+	      	'A normal human being ? :)',
+		'And a real damn coffee lover'];
 var count = 0;
 	
 function writeText(text,i){
@@ -121,9 +120,9 @@ window.addEventListener('load',function(){
 
 
 function createText(){
-	this.para = ['Im a graduate of BS Information Technology from Catanduanes State University and im currently working as a front end developer in Ten88 Digital. Im quite sure that i have gained a lot of experience in developing websites and web app, but im still learning.',
-				'My idea of a great UI/UX design is the ability of the product to convey what it wants the user to see and experience without using any roundabout methods. Simple, lightweight and easy to comprehend. A user-centered approach with strong and appealing visual language and little to no explanation of the navigation.',
-				'I like fellines and caffeine.'];
+	this.para = ['im a front end developer based in manila, philippines and currently employed under the banners of dottystyle creative wherein i work with intelligent and interesting individuals in a fast-paced yet pleasurable environment.',
+				'I usually create websites and web applications. Simple, lightweight and easy to comprehend. A user-centered approach with strong and appealing visual language and little to no explanation of the navigation.',
+				'I like felines and caffeine.'];
 	this.arrText = this.para[0].split('');
 	for(var i=0;i < this.arrText.length;i++){
 	this.newEl = document.createElement('I');
@@ -186,4 +185,4 @@ function trans(i,el){
 	}
 }
 
-console.log('Author: Rexor Quinones; Dev Date: Sep 28, 2017;');
+console.log('Author: Rexor Quinones; Dev Date: Sep 28, 2017; Last Update: July 31, 2019');
